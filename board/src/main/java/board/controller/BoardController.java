@@ -59,7 +59,7 @@ public class BoardController {
 		return "redirect:/board/openBoardList.do";
 	}
 	
-	@RequestMapping("/board/eloquaTest.do")
+	@RequestMapping("/eloquaTest.do")
 	public ModelAndView eloquaTest() throws Exception {
 		ModelAndView mv = new ModelAndView("/board/eloquaTest");
 		
@@ -70,5 +70,23 @@ public class BoardController {
 		
 		return mv;
 	}
+	
+	/*
+	 * @ResponseBody
+	 * 
+	 * @RequestMapping("/board/eloquaTest.do") public String test3(){ JsonObject obj
+	 * =new JsonObject();
+	 * 
+	 * obj.addProperty("title", "테스트3"); obj.addProperty("content", "테스트3 내용");
+	 * 
+	 * JsonObject data = new JsonObject();
+	 * 
+	 * data.addProperty("time", "12:00");
+	 * 
+	 * obj.add("data", data);
+	 * 
+	 * return obj.toString(); }
+	 */
+	
 	
 }
